@@ -15,6 +15,7 @@ const chat = (state = {
 }, action) => {
     switch (action.type) {
         case "ADD_CHAT":
+            //check if chat exist
             state = {
                 ...state,
                 chat: action.payload.chat
